@@ -131,9 +131,9 @@ class WarehouseManager:
 warehouse_manager = WarehouseManager()
 
 # Авторизованные пользователи
-AUTHORIZED_USERS = ["@DexterNote", "@puffplace74"]  # Оба могут продавать
-RESET_USERS = ["@puffplace74"]  # Только @puffplace74 может сбрасывать данные
-NOTIFICATION_USER = "@puffplace74"  # Уведомления отправляются @puffplace74
+AUTHORIZED_USERS = ["YYYYYOU", "IIIII"]  # Оба могут продавать
+RESET_USERS = ["IIIII"]  # Только I может сбрасывать данные
+NOTIFICATION_USER = "IIIII"  # Уведомления отправляются 
 
 # Текущие состояния пользователей
 user_states = {}
@@ -426,7 +426,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 def main() -> None:
     """Основная функция"""
     # Замените 'YOUR_BOT_TOKEN' на токен вашего бота
-    application = Application.builder().token("8374095503:AAHdapIvuCdi4hjodFWvhz-OVvbEJ44jxdw").build()
+    application = Application.builder().token("TOKEN_WWW").build()
     
     # Обработчики команд
     application.add_handler(CommandHandler("start", start))
@@ -440,3 +440,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+
